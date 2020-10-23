@@ -9,7 +9,7 @@
  expre
 ##       PUBLIC/IMAGES      ##
     - [] add images
-        - [] all same size
+        - [] all same size 100px by 100px?
         - [] modify `server/modules/data.js`
             include:
             - [] 'id'
