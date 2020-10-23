@@ -1,12 +1,12 @@
 ##       DEPENDENCIES      ##
-    - [] express
-    - [] body-parser
+    - [x] express
+    - [x] body-parser
     - [] pg ??? I don't think we need this one
-    - [] axios
-    - [] nodemon
-    - [] react ???
+    - [???] axios
+    - [???] nodemon
+    - [x] react ???
 
-
+ expre
 ##       PUBLIC/IMAGES      ##
     - [] add images
         - [] all same size
