@@ -29,9 +29,9 @@
 
 
 ##       TASK LIST       ##
-    - [] axios to 'GET' data from '/gallery'
-        - [] store data in 'App.js
-    - [] new component for 'GalleryList.js'
+    - [x] axios to 'GET' data from '/gallery'
+        - [x] store data in 'App.js
+    - [x] new component for 'GalleryList.js'
         - [] pass gallery data stored in 'App' via props
             - [] iterate list of gallery data
             - [] make GalleryItems
