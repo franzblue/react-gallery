@@ -35,7 +35,7 @@ class App extends Component {
         <br/>
         <p>ugly array splat</p>
         <p>{JSON.stringify(this.state.galleryArray)}</p>
-        <GalleryList galleryArray={this.galleryArray} />
+        <GalleryList galleryArray={this.state.galleryArray} />
       </div>
     );
   }

@@ -32,8 +32,8 @@
     - [x] axios to 'GET' data from '/gallery'
         - [x] store data in 'App.js
     - [x] new component for 'GalleryList.js'
-        - [] pass gallery data stored in 'App' via props
-            - [] iterate list of gallery data
+        - [x] pass gallery data stored in 'App' via props
+            - [x] iterate list of gallery data
             - [] make GalleryItems
                 - [] create new component called 'GalleryItems.js'
                     - [] pass individual gallery item via props
