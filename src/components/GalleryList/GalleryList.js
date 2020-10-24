@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GalleryItems from '../GalleryItems/GalleryItems';
 
 class GalleryList extends Component {
 
@@ -8,7 +9,8 @@ class GalleryList extends Component {
                 <p>George Michael, a cat in six acts</p>
 
                     {this.props.galleryArray.map((image) => {
-                    return <img src={image.path} alt={image.description} width="500" height="600"/>
+                    return <GalleryItems image={image} />
+
                     })}
                         {/* do not need below code anymore */}
                 {/* <img src="images/goat_small.jpg" alt="small goat"/> */}
@@ -19,3 +21,10 @@ class GalleryList extends Component {
 }
 
 export default GalleryList;
+
+
+
+{/* <img src={image.path} alt={image.description} width="500" height="600"/> */}
+
+
+// add key value?
