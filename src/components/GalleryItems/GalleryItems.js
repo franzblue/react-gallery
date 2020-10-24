@@ -19,16 +19,18 @@ class GalleryItems extends Component {
     }
 
     addLike = () => {
-        console.log('clicked addLike', this.props.image.likes);
+        console.log('clicked addLike', this.props.image.id);
         // axios PUT to change like++
-        Axios.put('/gallery/like/:id', )
-        .then(response => {
+        Axios.put(`gallery/like/${this.props.image.id}`)
+        .then((response) => {
             console.log('response from PUT server', response);
-        }).catch(error => {
+        }).catch((error) => {
             console.log('error PUT', error);
             alert('oops');
         })
     }
+
+    // axios.put(`/api/profile/${id}`, body)
 
     render() {
         return(

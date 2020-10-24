@@ -6,10 +6,10 @@ class GalleryList extends Component {
     render() {
         return(
             <>
-                <p>Gallery goes here</p>
+                <p>George Michael, a cat in six acts</p>
                     {/* pass mapped out galleryArray down to GalleryItems */}
                     {this.props.galleryArray.map((image) => {
-                    return <GalleryItems image={image} key={image.id} likes={this.props.likes}/>
+                    return <GalleryItems image={image} key={image.id} />
                     })}
 
             </>
