@@ -9,11 +9,13 @@ class App extends Component {
     galleryArray: []
   }
 
+  // function to GET data on page load
   componentDidMount() {
       console.log('hello world');
       this.galleryGetter()
   }
 
+  // function to GET data from gallery.data module
   galleryGetter = () => {
       Axios.get('/gallery')
           .then(response => {
