@@ -9,7 +9,7 @@ class GalleryList extends Component {
                 <p>George Michael, a cat in six acts</p>
 
                     {this.props.galleryArray.map((image) => {
-                    return <GalleryItems image={image} />
+                    return <GalleryItems image={image} key={image.id} />
 
                     })}
                         {/* do not need below code anymore */}

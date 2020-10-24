@@ -9,7 +9,7 @@
  expre
 ##       PUBLIC/IMAGES      ##
     - [x] add images
-        - [] all same size 100px by 100px?
+        - [x] all same size 100px by 100px?
         - [x] modify `server/modules/data.js`
             include:
             - [x] 'id'
@@ -34,10 +34,10 @@
     - [x] new component for 'GalleryList.js'
         - [x] pass gallery data stored in 'App' via props
             - [x] iterate list of gallery data
-            - [] make GalleryItems
-                - [] create new component called 'GalleryItems.js'
-                    - [] pass individual gallery item via props
-                        - [] update 'GalleryList' to use this component to display an image
+            - [x] make GalleryItems
+                - [x] create new component called 'GalleryItems.js'
+                    - [x] pass individual gallery item via props
+                        - [x] update 'GalleryList' to use this component to display an image
                         - [] swap image with description on click
                             - [] Use [conditional rendering](https://reactjs.org/docs/conditional-rendering.html).
                         - [] display number of likes
