@@ -9,7 +9,7 @@
  expre
 ##       PUBLIC/IMAGES      ##
     - [] add images
-        - [] all same size
+        - [] all same size 100px by 100px?
         - [] modify `server/modules/data.js`
             include:
             - [] 'id'
@@ -29,11 +29,11 @@
 
 
 ##       TASK LIST       ##
-    - [] axios to 'GET' data from '/gallery'
-        - [] store data in 'App.js
-    - [] new component for 'GalleryList.js'
-        - [] pass gallery data stored in 'App' via props
-            - [] iterate list of gallery data
+    - [x] axios to 'GET' data from '/gallery'
+        - [x] store data in 'App.js
+    - [x] new component for 'GalleryList.js'
+        - [x] pass gallery data stored in 'App' via props
+            - [x] iterate list of gallery data
             - [] make GalleryItems
                 - [] create new component called 'GalleryItems.js'
                     - [] pass individual gallery item via props
