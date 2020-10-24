@@ -8,15 +8,15 @@
 
  expre
 ##       PUBLIC/IMAGES      ##
-    - [] add images
+    - [x] add images
         - [] all same size 100px by 100px?
-        - [] modify `server/modules/data.js`
+        - [x] modify `server/modules/data.js`
             include:
-            - [] 'id'
-                - [] each a unique number
+            - [x] 'id'
+                - [x] each a unique number
             - [] 'title'
-            - [] 'description'
-            - [] 'path for'
+            - [x] 'description'
+            - [x] 'path for'
 
 
 ##       COMPONENTS       ##
