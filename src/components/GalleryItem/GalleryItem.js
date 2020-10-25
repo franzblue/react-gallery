@@ -32,8 +32,6 @@ class GalleryItem extends Component {
         })
     }
 
-    // axios.put(`/api/profile/${id}`, body)
-
     render() {
         return(
             <div>

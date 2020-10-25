@@ -18,12 +18,12 @@ class App extends Component {
   // function to GET data from gallery.data module
   galleryGetter = () => {
       Axios.get('/gallery')
-          .then(response => {
+          .then((response) => {
               console.log('GET gallery', response.data);
               this.setState({
                   galleryArray: response.data
                 })
-          }).catch(error => {
+          }).catch((error) => {
               console.log('GET error', error);
           })
   }
@@ -35,11 +35,12 @@ class App extends Component {
           <h1 className="App-title">George Michael, a cat in six acts</h1>
         </header>
         <br/>
-        <body>
+        {JSON.str}
+        <main>
           {/* send galleryArray to GalleryList component
           also send along galleryGetter for page refresh */}
           <GalleryList galleryArray={this.state.galleryArray} galleryGetter={this.galleryGetter}/>
-        </body>
+        </main>
         <footer></footer>
       </div>
     );
