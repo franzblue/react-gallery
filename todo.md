@@ -20,12 +20,12 @@
 
 
 ##       COMPONENTS       ##
-    - [] use states and props
-    - [] `App` - represents the overall application or site
-    - [] - `GalleryList` - represents the gallery of images.
-    - [] - `GalleryItem` - represents a single image in the gallery
+    - [x] use states and props
+    - [x] `App` - represents the overall application or site
+    - [x] - `GalleryList` - represents the gallery of images.
+    - [x] - `GalleryItem` - represents a single image in the gallery
         - [x] ability to click the image to toggle between image and description
-        - [] ability to like an image.
+        - [x] ability to like an image.
 
 
 ##       TASK LIST       ##
@@ -40,10 +40,10 @@
                         - [x] update 'GalleryList' to use this component to display an image
                         - [x] swap image with description on click
                             - [x] Use [conditional rendering](https://reactjs.org/docs/conditional-rendering.html).
-                        - [] display number of likes
-                        - [] include like button
-                            - [] when clicked, use axios to 'PUT' like count at '/gallery/like/:id'
-                            - [] update gallery each click
+                        - [x] display number of likes
+                        - [x] include like button
+                            - [x] when clicked, use axios to 'PUT' like count at '/gallery/like/:id'
+                            - [x] update gallery each click
 
 
 ##       STRETCH GOALS      ##

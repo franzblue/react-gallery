@@ -35,9 +35,9 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br/>
-        <p>ugly array splat</p>
-        <p>{JSON.stringify(this.state.galleryArray)}</p>
-        <GalleryList galleryArray={this.state.galleryArray} />
+        {/* send galleryArray to GalleryList component
+        also send along galleryGetter for page refresh */}
+        <GalleryList galleryArray={this.state.galleryArray} galleryGetter={this.galleryGetter}/>
       </div>
     );
   }

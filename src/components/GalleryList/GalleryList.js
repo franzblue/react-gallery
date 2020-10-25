@@ -9,7 +9,7 @@ class GalleryList extends Component {
                 <p>George Michael, a cat in six acts</p>
                     {/* pass mapped out galleryArray down to GalleryItems */}
                     {this.props.galleryArray.map((image) => {
-                    return <GalleryItems image={image} key={image.id} />
+                    return <GalleryItems image={image} key={image.id} galleryGetter={this.props.galleryGetter}/>
                     })}
 
             </>
@@ -18,8 +18,3 @@ class GalleryList extends Component {
 }
 
 export default GalleryList;
-
-
-                        {/* do not need below code anymore */}
-                {/* <img src="images/goat_small.jpg" alt="small goat"/> */}
-                {/* <img src={this.image.path} alt="small goat"/> */}
