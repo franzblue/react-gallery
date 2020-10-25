@@ -7,8 +7,16 @@ img {
     display: inline-block;
     width: 250px;
     height: 250px;
+    background-color: rgb(192, 190, 190);
+    position: relative;
 }
 
 .button {
     display: inline;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -75%);
 }

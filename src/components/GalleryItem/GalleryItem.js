@@ -37,12 +37,12 @@ class GalleryItem extends Component {
             <div>
                 {/* conditional rendering deciding to show image or description */}
                 {this.state.showImage ? 
-                <div className="image">
-                    <img src={this.props.image.path} alt={this.props.image.description} onClick={this.showImageUpdate}/>
+                <div onClick={this.showImageUpdate} className="image">
+                    <img src={this.props.image.path} alt={this.props.image.description}/>
                 </div>
                 :
-                <div onClick={this.showImageUpdate}>
-                    <p className="description" >{this.props.image.description}</p>
+                <div onClick={this.showImageUpdate} className="description">
+                    <p className="text">{this.props.image.description}</p>
                 </div>
                 }
                 {/* like button */}
@@ -50,7 +50,6 @@ class GalleryItem extends Component {
                 <div className="button">
                     <button onClick={this.addLike}>Like</button>
                 </div>
-                
             </div>   
         )  
     }
