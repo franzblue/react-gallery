@@ -1,7 +1,8 @@
 import Axios from 'axios';
 import React, { Component } from 'react';
+import './GalleryItem.css';
 
-class GalleryItems extends Component {
+class GalleryItem extends Component {
 
     // state to determine whether to show image or description
     state = {
@@ -38,19 +39,23 @@ class GalleryItems extends Component {
             <div>
                 {/* conditional rendering deciding to show image or description */}
                 {this.state.showImage ? 
-                <img src={this.props.image.path} 
-                alt={this.props.image.description} 
-                width="500" height="600"
-                onClick={this.showImageUpdate}/>
+                <div className="image">
+                    <img src={this.props.image.path} alt={this.props.image.description} onClick={this.showImageUpdate}/>
+                </div>
                 :
-                <p onClick={this.showImageUpdate}>{this.props.image.description}</p>
+                <div onClick={this.showImageUpdate}>
+                    <p className="description" >{this.props.image.description}</p>
+                </div>
                 }
                 {/* like button */}
                 <p>Number of likes: {this.props.image.likes}</p>
-                <button onClick={this.addLike}>Like</button>
+                <div className="button">
+                    <button onClick={this.addLike}>Like</button>
+                </div>
+                
             </div>   
         )  
     }
 }
 
-export default GalleryItems;
+export default GalleryItem;

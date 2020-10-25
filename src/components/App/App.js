@@ -32,12 +32,15 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of my life</h1>
+          <h1 className="App-title">George Michael, a cat in six acts</h1>
         </header>
         <br/>
-        {/* send galleryArray to GalleryList component
-        also send along galleryGetter for page refresh */}
-        <GalleryList galleryArray={this.state.galleryArray} galleryGetter={this.galleryGetter}/>
+        <body>
+          {/* send galleryArray to GalleryList component
+          also send along galleryGetter for page refresh */}
+          <GalleryList galleryArray={this.state.galleryArray} galleryGetter={this.galleryGetter}/>
+        </body>
+        <footer></footer>
       </div>
     );
   }

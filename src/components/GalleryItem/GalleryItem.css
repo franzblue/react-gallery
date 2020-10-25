@@ -1,0 +1,14 @@
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.description {
+    display: inline-block;
+    width: 75%;
+    height: 75%;
+}
+
+.button {
+    display: inline;
+}

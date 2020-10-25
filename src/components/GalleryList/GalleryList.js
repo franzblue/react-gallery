@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import GalleryItems from '../GalleryItems/GalleryItems';
+import GalleryItem from '../GalleryItem/GalleryItem';
+import './GalleryList.css';
 
 class GalleryList extends Component {
 
     render() {
         return(
-            <>
-                <p>George Michael, a cat in six acts</p>
-                    {/* pass mapped out galleryArray down to GalleryItems */}
+            <div className="gallery">
+                    {/* pass mapped out galleryArray down to GalleryItem */}
                     {this.props.galleryArray.map((image) => {
-                    return <GalleryItems image={image} key={image.id} galleryGetter={this.props.galleryGetter}/>
+                    return <GalleryItem image={image} key={image.id} galleryGetter={this.props.galleryGetter}/>
                     })}
-
-            </>
+            </div>
         );
     }
 }
