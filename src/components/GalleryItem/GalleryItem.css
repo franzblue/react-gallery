@@ -9,6 +9,7 @@ img {
     height: 250px;
     background-color: rgb(192, 190, 190);
     position: relative;
+    border: 5px solid #555;
 }
 
 .button {
